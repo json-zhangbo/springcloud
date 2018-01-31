@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: api-gateway
+server:
+  port: 8002
+zuul:
+  add-host-header: true
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://json:zhangbo123@localhost:8761/eureka/

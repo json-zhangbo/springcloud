@@ -1,0 +1,3 @@
+org\spring\my\eureka\service\ribbon\ServiceClient01BootStarp.class
+org\spring\my\eureka\service\ribbon\web\ConsumerController.class
+org\spring\my\eureka\service\ribbon\service\CalculatorService.class

@@ -1,0 +1,27 @@
+server:
+  port: 3200
+
+spring:
+  application:
+    name: client-consumer-feign
+feign:  
+  hystrix:  
+    enabled: true  
+#Ribbon 超时时间设置  
+#ribbon:  
+#  ConnectTimeout: 500  
+#  ReadTimeout:  3000  
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 3
+    lease-expiration-duration-in-seconds: 5
+    metadata-map:
+      cluster: main
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://json:zhangbo123@localhost:8761/eureka/
+  

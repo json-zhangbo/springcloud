@@ -1,0 +1,18 @@
+server:
+  port: 2200
+spring:
+  application:
+    name: CalculatorServer                        # 指定发布的微服务名（以后调用时，只需该名称即可访问该服务）     
+eureka:
+    instance:
+       hostname: www.jsonzhang.com
+       instance-id: ${spring.application.name}:${server.port}
+       prefer-ip-address: true                      # 设置微服务调用地址为IP优先（缺省为false）
+       leaseRenewalIntervalInSeconds: 5          # 心跳时间，即服务续约间隔时间（缺省为30s）
+       leaseExpirationDurationInSeconds: 15      # 发呆时间，即服务续约到期时间（缺省为90s）
+    client:
+      register-with-eureka: true
+      healthcheck:
+          enabled: true                               # 开启健康检查（依赖spring-boot-starter-actuator）     
+      serviceUrl:
+        defaultZone: http://json:zhangbo123@localhost:8761/eureka/

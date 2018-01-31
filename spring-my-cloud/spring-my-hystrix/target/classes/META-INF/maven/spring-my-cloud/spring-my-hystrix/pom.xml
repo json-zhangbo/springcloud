@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>spring-my-cloud</groupId>
+    <artifactId>spring-my-cloud</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>spring-my-cloud</groupId>
+  <artifactId>spring-my-hystrix</artifactId>
+  <packaging>jar</packaging>
+  <name>spring-my-hystrix</name>
+  <url>http://maven.apache.org</url>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-hystrix</artifactId>
+    </dependency> 
+   <dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
+  </dependency>
+  <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-spectator</artifactId>
+    </dependency>
+   <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-actuator -->
+   <!-- Hystrix Metrics Stream(hystrix指标流) -->
+	<dependency>
+	    <groupId>org.springframework.boot</groupId>
+	    <artifactId>spring-boot-starter-actuator</artifactId>
+	    <version>1.5.9.RELEASE</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-turbine -->
+	<dependency>
+	    <groupId>org.springframework.cloud</groupId>
+	    <artifactId>spring-cloud-starter-turbine</artifactId>
+	    <version>1.3.5.RELEASE</version>
+	</dependency>
+	
+  </dependencies>
+</project>
