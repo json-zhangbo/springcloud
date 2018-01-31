@@ -4,7 +4,7 @@
 这里是注册中心</br>
 # spring-my-eureka-server-discovery</br>
 这里是服务提供者1</br>
-# spring-my-eureka-server-discovery</br>
+# spring-my-eureka-server-discovery2</br>
 这里是服务提供者2</br>
 服务提供者一共两个，搭建成集群</br>
 # spring-my-eureka-service-feign</br>
