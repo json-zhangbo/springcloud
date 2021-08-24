@@ -17,5 +17,5 @@
 # <a href="https://github.com/json-zhangbo/springcloud/tree/master/spring-my-cloud/spring-my-turbine">spring-my-turbine</a> </br>
 这里是服务监控，可以监控集群，也可以监控单个实例</br>
 
-#作者：张波
+#作者：json
 QQ:329989580
